@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  background-color: #f3f5f7;
+}
+
+header {
+  width: 100%;
+  /* height: 15.625rem; */
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.5rem;
+
+  background: rgb(87, 74, 232);
+  background: linear-gradient(
+    43deg,
+    rgba(87, 74, 232, 1) 0%,
+    rgba(62, 161, 219, 1) 100%
+  );
+}
+
+.navbar,
+.search-container {
+  max-width: 56.25rem;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .title img {
+  width: 2.625rem;
+  height: 2.625rem;
+}
+
+main {
+  padding: 2rem 1.5rem;
+}
+
+main #container-news {
+  max-width: 56.25rem;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+main #container-news #news {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+main #container-news #news img {
+  max-width: 868px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+main #container-news #news .title-news {
+  font-size: 26px;
+  color: #1a202c;
+  padding: 16px 0 24px 0;
+}
+
+main #container-news #news .description {
+  color: #717171;
+  text-align: justify;
+  font-size: 18px;
+}
+
+footer {
+  width: 100%;
+  padding: 8px 24px;
+}
+
+footer .container {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 8px 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+footer .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+footer .logo img {
+  width: 1.625rem;
+  height: 1.625rem;
+  color: #292a2b;
+}
+
+footer .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+footer .menu li a {
+  font-size: 0.875rem;
+  color: #292a2b;
+  color: rgb(87, 74, 232);
+  transition: 0.2s ease;
+}
+
+footer .menu li a:hover {
+  filter: brightness(1.6);
+}
