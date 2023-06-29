@@ -1,0 +1,49 @@
+@media only screen and (max-width: 620px) {
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .navbar .logo img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .navbar .logo p {
+    font-size: 21px;
+    color: #fff;
+  }
+
+  main {
+    padding: 1.75rem 1.5rem;
+  }
+
+  main .list-news #news .title-news {
+    font-size: 1.5rem;
+    color: #1a202c;
+    padding: 0.75rem 0 1rem 0;
+  }
+
+  main .list-news #news .description {
+    font-size: 1rem;
+    color: #717171;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main {
+    padding: 1.625rem 1.5rem;
+  }
+
+  main .list-news #news .title-news {
+    font-size: 1.125rem;
+    color: #1a202c;
+    padding: 0.5rem 0 0.75rem 0;
+  }
+
+  main .list-news #news .description {
+    font-size: 0.875rem;
+    color: #717171;
+  }
+}
