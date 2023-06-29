@@ -11,26 +11,44 @@
     />
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
     <title>Code News</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="/" class="title">
-          <img src="./assets/logo.png" alt="" />
-          Code News
+        <a href="/" class="logo">
+          <img src="./assets/logo.png" alt="Logo" />
+          <p>Code News</p>
         </a>
       </nav>
     </header>
+
     <main>
-      <div id="container-news"></div>
+      <section id="paginate">
+        <div class="list-news"></div>
+
+        <div class="controls">
+          <div class="first">&#171;</div>
+          <div class="prev">&lt;</div>
+
+          <div class="pagination">
+            <div class="numbers"></div>
+          </div>
+
+          <div class="next">&gt;</div>
+          <div class="last">&#187;</div>
+        </div>
+      </section>
     </main>
+
     <footer>
       <div class="container">
-        <div class="logo">
+        <a href="/" class="logo-footer">
           <img src="./assets/logo.png" alt="logo" />
           <p>@ 2023 Code News</p>
-        </div>
+        </a>
+
         <ul class="menu">
           <li>
             <a
