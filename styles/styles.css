@@ -16,7 +16,6 @@ body {
 
 header {
   width: 100%;
-  /* height: 15.625rem; */
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -31,39 +30,37 @@ header {
   );
 }
 
-.navbar,
-.search-container {
+.navbar {
   max-width: 56.25rem;
   width: 100%;
-}
-
-.navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar .title {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-
+.navbar .logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.navbar .title img {
+.navbar .logo img {
   width: 2.625rem;
   height: 2.625rem;
+}
+
+.navbar .logo p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
 }
 
 main {
   padding: 2rem 1.5rem;
 }
 
-main #container-news {
+main .list-news {
   max-width: 56.25rem;
   width: 100%;
   margin: 0 auto;
@@ -73,68 +70,117 @@ main #container-news {
   gap: 1.5rem;
 }
 
-main #container-news #news {
+main .list-news #news {
   display: flex;
   flex-direction: column;
 
   background-color: #fff;
-  border-radius: 5px;
-  padding: 16px;
+  border-radius: 0.3125rem;
+  padding: 1rem;
 }
 
-main #container-news #news img {
-  max-width: 868px;
+main .list-news #news .image-news {
+  max-width: 54.25rem;
   width: 100%;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 
-main #container-news #news .title-news {
-  font-size: 26px;
+main .list-news #news .title-news {
+  font-size: 1.625rem;
   color: #1a202c;
-  padding: 16px 0 24px 0;
+  padding: 1rem 0 1.5rem 0;
 }
 
-main #container-news #news .description {
+main .list-news #news .description {
   color: #717171;
   text-align: justify;
-  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+#paginate .controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 24px;
+}
+
+#paginate .controls .first,
+.prev,
+.next,
+.last {
+  cursor: pointer;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+}
+
+#paginate .controls .pagination {
+  display: flex;
+
+  flex-direction: column;
+}
+
+#paginate .controls .pagination .numbers {
+  display: flex;
+}
+
+#paginate .controls .pagination .numbers div {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+}
+
+#paginate .controls .pagination .numbers .active {
+  color: rgb(87, 74, 232);
 }
 
 footer {
   width: 100%;
-  padding: 8px 24px;
+  padding: 0 1.5rem;
 }
 
 footer .container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 56.25rem;
   width: 100%;
-  padding: 8px 0;
+  margin: 0 auto;
+  padding: 0.5rem 0;
 
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 0.0625rem solid rgba(0, 0, 0, 0.2);
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
-footer .logo {
+footer .logo-footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
   gap: 0.5rem;
-
-  font-weight: 400;
-  font-size: 0.875rem;
 }
 
-footer .logo img {
+footer .logo-footer img {
   width: 1.625rem;
   height: 1.625rem;
+}
+
+footer .logo-footer p {
+  font-weight: 400;
+  font-size: 0.875rem;
   color: #292a2b;
 }
 
@@ -142,17 +188,17 @@ footer .menu {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
 
 footer .menu li a {
   font-size: 0.875rem;
-  color: #292a2b;
   color: rgb(87, 74, 232);
   transition: 0.2s ease;
 }
 
 footer .menu li a:hover {
-  filter: brightness(1.6);
+  filter: brightness(1.5);
 }
