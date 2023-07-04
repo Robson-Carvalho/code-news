@@ -1,7 +1,7 @@
 const url = "https://code-news-api.vercel.app/";
 const listNews = document.querySelector(".list-news");
-
 const newsByPage = 10;
+
 const state = {
   page: 1,
   newsByPage,
@@ -111,6 +111,7 @@ const buttons = {
   element: html.get(".pagination .numbers"),
   create(number) {
     const button = document.createElement("div");
+    button.style.cursor = "pointer";
 
     if (state.page == number) {
       button.classList.add("active");
